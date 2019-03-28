@@ -37,7 +37,7 @@ class GameUITests: XCTestCase {
         let app = XCUIApplication()
 
         // Check the string displayed on the label is existing
-        XCTAssertTrue(app.otherElements["someLabel"].exists)
+        XCTAssertTrue(app.otherElements["someLabel"].exists, "someLabel does not exist")
 
         app.tap()
         snapshot("1_Tap")
